@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Portal Administrativo</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      display: flex;
+      min-height: 100vh;
+      background-color: #f0f2f5;
+    }
+
+    /* === MENU LATERAL === */
+    .sidebar {
+      width: 240px;
+      background-color: #1e2a38;
+      color: white;
+      padding: 20px 0;
+      position: fixed;
+      top: 0;
+      bottom: 0;
+      left: 0;
+    }
+
+    .sidebar .logo {
+      text-align: center;
+      font-weight: bold;
+      font-size: 18px;
+      padding-bottom: 20px;
+      border-bottom: 1px solid #2f3e4f;
+      color: #ffffff;
+    }
+
+    .sidebar h3 {
+      font-size: 14px;
+      margin: 20px 0 10px 20px;
+      color: #8fa6bc;
+      text-transform: uppercase;
+    }
+
+    .sidebar ul {
+      list-style: none;
+      padding-left: 0;
+    }
+
+    .sidebar ul li a {
+      display: flex;
+      align-items: center;
+      padding: 10px 20px;
+      color: #cfd8e3;
+      text-decoration: none;
+      transition: background 0.3s;
+    }
+
+    .sidebar ul li a:hover,
+    .sidebar ul li a.active {
+      background-color: #2d3b50;
+      color: #ffffff;
+    }
+
+    .sidebar ul li a i {
+      margin-right: 10px;
+      font-size: 16px;
+    }
+
+    /* === CONTEÚDO PRINCIPAL === */
+    .main-content {
+      margin-left: 240px;
+      padding: 30px;
+      flex: 1;
+    }
+
+    .main-content h1 {
+      color: #333;
+      margin-bottom: 20px;
+    }
+
+    /* === RESPONSIVO === */
+    @media screen and (max-width: 768px) {
+      .sidebar {
+        position: relative;
+        width: 100%;
+      }
+
+      .main-content {
+        margin-left: 0;
+      }
+    }
+    
+	.logo { 
+	  text-align: center;
+	  padding-bottom: 20px;
+	  border-bottom: 1px solid #2f3e4f;
+	}
+	
+	.logo img {
+	  max-width: 160px;  /* Redimensiona proporcionalmente */
+	  height: auto;
+	}    
+  </style>
+</head>
+<body>
+
+  <!-- Menu lateral -->
+  <nav class="sidebar">
+	<div class="logo">
+	  <img src="img/logo.png" alt="Logo">
+	</div>
+
+    <h3>Administração</h3>
+    <ul>
+      <li><a href="viewUser.jsp"><i class="bi bi-person"></i> Cadastro de Usuários</a></li>
+    </ul>
+
+    <h3>Instituições de Ensino</h3>
+    <ul>
+      <li><a href="viewAluno.jsp"><i class="bi bi-mortarboard"></i> Cadastro de Alunos</a></li>
+      <li><a href="viewProfessor.jsp"><i class="bi bi-person"></i> Cadastro de Professores</a></li>
+      <li><a href="viewInstituicao.jsp"><i class="bi bi-building"></i> Instituições de Ensino</a></li>      
+    </ul>
+
+    <h3>Acesso</h3>
+    <ul>
+      <li><a href="#"><i class="bi bi-person-circle"></i> User </a></li>
+      <li><a href="#"><i class="bi bi-box-arrow-right"></i> Sair</a></li>
+    </ul>
+  </nav>
+
+  <!-- Conteúdo principal -->
+  <main class="main-content">
+    <h1>Bem-vindo ao portal de Gestão de Estágios na Área da Saúde</h1>
+    <p>Use o menu lateral para navegar entre os módulos e realizar cadastros.</p>
+  </main>
+
+</body>
+</html>

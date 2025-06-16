@@ -1,0 +1,10 @@
+0:0:0:0:0:0:0:1 - - [16/Jun/2025:13:51:00 -0300] "GET /webapp HTTP/1.1" 302 -
+0:0:0:0:0:0:0:1 - - [16/Jun/2025:13:51:00 -0300] "GET /webapp/ HTTP/1.1" 304 -
+0:0:0:0:0:0:0:1 - - [16/Jun/2025:13:51:00 -0300] "GET /webapp/img/logo.png HTTP/1.1" 304 -
+0:0:0:0:0:0:0:1 - - [16/Jun/2025:13:51:07 -0300] "GET /webapp/viewProfessor.jsp HTTP/1.1" 404 760
+0:0:0:0:0:0:0:1 - - [16/Jun/2025:13:51:11 -0300] "GET /webapp/viewInstituicao.jsp HTTP/1.1" 404 762
+0:0:0:0:0:0:0:1 - - [16/Jun/2025:13:51:22 -0300] "GET /webapp/viewAluno.jsp HTTP/1.1" 200 544
+0:0:0:0:0:0:0:1 - - [16/Jun/2025:13:51:22 -0300] "GET /webapp/style.css HTTP/1.1" 304 -
+0:0:0:0:0:0:0:1 - - [16/Jun/2025:13:51:27 -0300] "GET /webapp/formAluno.jsp HTTP/1.1" 200 2276
+0:0:0:0:0:0:0:1 - - [16/Jun/2025:13:53:03 -0300] "POST /webapp/addAluno.jsp HTTP/1.1" 302 -
+0:0:0:0:0:0:0:1 - - [16/Jun/2025:13:53:03 -0300] "GET /webapp/formAluno.jsp?error=CPF+inv%C3%83%C2%A1lido HTTP/1.1" 200 2276
